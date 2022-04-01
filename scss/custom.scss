@@ -1,0 +1,215 @@
+// COLORS
+$dark_grey: #e5e5e5;
+$light_grey: #e0e0e0;
+$grey: #f6f6f6;
+$dark_green: #0c8543;
+$light_green: #f3f9f6;
+$white: #fff;
+$black: #000;
+
+// FONT
+$font: "Montserrat", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $dark_grey;
+}
+.main {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 735px) {
+  .main {
+    max-width: 375px;
+    background-color: $white;
+  }
+  header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $light_grey;
+
+    .logo {
+      background-color: $dark_green;
+      border-radius: 8px;
+      display: flex;
+      width: 170px;
+
+      &__block1 {
+        background-color: $white;
+        width: 33%;
+        border: 2px solid $dark_green;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      &__block2 {
+        width: 66%;
+
+        &_text {
+          color: $white;
+          font-size: 30px;
+          margin: 15px 0 5px 0;
+        }
+      }
+    }
+  }
+  .section1 {
+    margin-bottom: 35px;
+
+    &__text {
+      font-family: $font;
+      font-weight: 600;
+      font-size: 22px;
+      text-align: justify;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+      margin: 25px 0;
+
+      &_green {
+        color: $dark_green;
+        font-weight: 700;
+      }
+    }
+
+    &__cards {
+      margin: 0 10px;
+
+      .col {
+        background-color: $light_green;
+        margin: 4px;
+        border-radius: 8px;
+
+        img {
+          margin: 30px 0 15px 0;
+        }
+        p {
+          font-family: $font;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .section2 {
+    background-color: $light_green;
+    padding-bottom: 40px;
+
+    h1 {
+      font-family: $font;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: left;
+      padding: 40px 0 20px 0;
+      margin-bottom: 0;
+    }
+    p {
+      font-family: $font;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: left;
+      line-height: 24px;
+    }
+    &__images {
+      position: relative;
+      .image {
+      }
+      .zoom {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+  .section3 {
+    background-color: $grey;
+    padding: 35px 0;
+
+    &__text {
+      font-family: $font;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 15px 0;
+
+      &_green {
+        color: $dark_green;
+      }
+    }
+    &__description {
+      font-family: $font;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+  }
+  .section4 {
+    padding: 35px 0;
+
+    p {
+      font-family: $font;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+  footer {
+    background-color: $dark_green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    flex-direction: column;
+
+    .footer__logo {
+      background-color: $dark_green;
+      border-radius: 8px;
+      display: flex;
+      width: 170px;
+
+      &_block1 {
+        background-color: $white;
+        width: 33%;
+        border: 2px solid $white;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      &_block2 {
+        width: 66%;
+        border: 2px solid $white;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        &_text {
+          color: $white;
+          font-size: 30px;
+          margin: 15px 0 5px 0;
+        }
+      }
+    }
+    .footer__link {
+      display: flex;
+      flex-direction: column;
+      padding: 25px 0;
+
+      a {
+        font-family: $font;
+        font-weight: 500;
+        font-size: 14px;
+        color: $white;
+        line-height: 30px;
+        text-decoration: underline;
+      }
+    }
+    .copyright {
+      font-family: $font;
+      font-weight: 500;
+      font-size: 14px;
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+}
