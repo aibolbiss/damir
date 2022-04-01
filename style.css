@@ -98,11 +98,11 @@ body {
     text-align: left;
     line-height: 24px;
   }
+  .section2 img {
+    width: 100%;
+  }
   .section2__images {
     position: relative;
-  }
-  .section2__images img {
-    width: 100%;
   }
   .section2__images .zoom {
     position: absolute;
